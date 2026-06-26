@@ -37,6 +37,7 @@ button {
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -65,20 +66,7 @@ button:hover {
     box-shadow: 0 0 20px cyan;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px cyan;
-    }
-    to {
-        text-shadow: 0 0 30px magenta;
-    }
-}.tic-tac-toe {
+.tic-tac-toe {
     text-align: center;
     padding: 50px;
 }
@@ -102,17 +90,32 @@ footer {
     justify-content: center;
     cursor: pointer;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 .cell:hover {
     background: #333;
-}.snake-game {
-    text-align: center;
-    padding: 50px;
+    box-shadow: 0 0 10px cyan;
 }
 
-canvas {
-    background: black;
-    border: 4px solid lime;
-    border-radius: 10px;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px cyan;
+    }
+    to {
+        text-shadow: 0 0 30px magenta;
+    }
+}.music-player {
+    text-align: center;
+    padding: 40px;
+}
+
+.music-player input {
+    width: 200px;
 }
