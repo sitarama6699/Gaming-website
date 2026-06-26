@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎮 Gaming Zone</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Leaderboard</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Gaming Zone</h2>
+        <p>Play games and earn points!</p>
+        <button onclick="showMessage()">Play Now</button>
+    </section>
+
+    <section class="games">
+        <div class="card">
+            <h3>🏎 Racing Game</h3>
+            <p>Race against opponents.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚔ Action Game</h3>
+            <p>Fight enemies and win.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧩 Puzzle Game</h3>
+            <p>Solve challenging puzzles.</p>
+        </div>
+    </section>
+
+    <section class="tic-tac-toe">
+        <h2>Tic-Tac-Toe</h2>
+
+        <div class="board">
+            <div class="cell" onclick="play(this,0)"></div>
+            <div class="cell" onclick="play(this,1)"></div>
+            <div class="cell" onclick="play(this,2)"></div>
+            <div class="cell" onclick="play(this,3)"></div>
+            <div class="cell" onclick="play(this,4)"></div>
+            <div class="cell" onclick="play(this,5)"></div>
+            <div class="cell" onclick="play(this,6)"></div>
+            <div class="cell" onclick="play(this,7)"></div>
+            <div class="cell" onclick="play(this,8)"></div>
+        </div>
+
+        <h3 id="status">Player X's Turn</h3>
+        <button onclick="resetGame()">Restart</button>
+    </section>
+
+    <section class="snake-game">
+        <h2>🐍 Snake Game</h2>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <p>Use Arrow Keys to move the snake.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Gaming Zone</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
