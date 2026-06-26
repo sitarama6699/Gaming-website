@@ -75,9 +75,9 @@ function resetGame() {
         "Player X's Turn";
 }
 const songs = [
-    "music1.mp3",
-    "music2.mp3",
-    "music3.mp3"
+    "mixkit-cat-walk-371.mp3",
+    "mixkit-fright-night-871.mp3",
+    "mixkit-tech-house-vibes-130.mp3"
 ];
 
 let currentSong = 0;
