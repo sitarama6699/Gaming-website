@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()">🎵 Play / Pause Music</button>
+<section class="music-player">
+    <h2>🎵 Gaming Music Player</h2>
+
+    <audio id="bgMusic">
+        <source id="musicSource" src="music1.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="toggleMusic()">▶ Play / Pause</button>
+    <button onclick="nextSong()">⏭ Next Song</button>
+
+    <br><br>
+
+    <label>🔊 Volume:</label>
+    <input type="range"
+           id="volume"
+           min="0"
+           max="1"
+           step="0.1"
+           value="0.5"
+           onchange="changeVolume()">
+</section>
+<script src="script.js"></script><body>
 
     <header>
         <h1>🎮 Gaming Zone</h1>
@@ -61,17 +87,6 @@
         <button onclick="resetGame()">Restart</button>
     </section>
 
-    <section class="snake-game">
-        <h2>🐍 Snake Game</h2>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <p>Use Arrow Keys to move the snake.</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Gaming Zone</p>
-    </footer>
-
-    <script src="script.js"></script>
-
+   
 </body>
 </html>
